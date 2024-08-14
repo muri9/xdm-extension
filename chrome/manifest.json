@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "XDM downloader",
+  "description": "Download with Xtreme Download Manager.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "downloads",
+    "contextMenus",
+    "cookies",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "options_page": "options.html"
+}
